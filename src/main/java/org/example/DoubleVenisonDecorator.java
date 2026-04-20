@@ -1,4 +1,5 @@
 package org.example;
+
 public class DoubleVenisonDecorator extends OrderDecorator {
     public DoubleVenisonDecorator(Order decoratedOrder) {
         super(decoratedOrder);
@@ -6,11 +7,11 @@ public class DoubleVenisonDecorator extends OrderDecorator {
 
     @Override
     public String getName() {
-        return decoratedOrder.getName() + " + Двойная порция оленины";
+        return super.getName() + " + Двойная порция оленины";
     }
 
     @Override
     public int getPrice() {
-        return decoratedOrder.getPrice() + 20;
+        return super.getPrice() + 20;
     }
 }

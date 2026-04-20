@@ -7,11 +7,11 @@ public class NordBreadDecorator extends OrderDecorator {
 
     @Override
     public String getName() {
-        return decoratedOrder.getName() + " + Нордская лепешка";
+        return super.getName() + " + Нордская лепешка";
     }
 
     @Override
     public int getPrice() {
-        return decoratedOrder.getPrice() + 7;
+        return super.getPrice() + 7;
     }
 }

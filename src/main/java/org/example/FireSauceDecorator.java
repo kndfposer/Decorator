@@ -7,11 +7,11 @@ public class FireSauceDecorator extends OrderDecorator {
 
     @Override
     public String getName() {
-        return decoratedOrder.getName() + " + Огненный соус";
+        return super.getName() + " + Огненный соус";
     }
 
     @Override
     public int getPrice() {
-        return decoratedOrder.getPrice() + 10;
+        return super.getPrice() + 10;
     }
 }

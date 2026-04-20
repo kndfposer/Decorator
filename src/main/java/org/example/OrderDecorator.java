@@ -1,6 +1,7 @@
 package org.example;
+
 public abstract class OrderDecorator implements Order {
-    protected Order decoratedOrder;
+    private final Order decoratedOrder;
 
     public OrderDecorator(Order decoratedOrder) {
         this.decoratedOrder = decoratedOrder;

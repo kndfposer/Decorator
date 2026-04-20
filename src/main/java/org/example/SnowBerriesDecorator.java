@@ -1,4 +1,5 @@
 package org.example;
+
 public class SnowBerriesDecorator extends OrderDecorator {
     public SnowBerriesDecorator(Order decoratedOrder) {
         super(decoratedOrder);
@@ -6,11 +7,11 @@ public class SnowBerriesDecorator extends OrderDecorator {
 
     @Override
     public String getName() {
-        return decoratedOrder.getName() + " + Снежные ягоды";
+        return super.getName() + " + Снежные ягоды";
     }
 
     @Override
     public int getPrice() {
-        return decoratedOrder.getPrice() + 5;
+        return super.getPrice() + 5;
     }
 }
